@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv ="content-type" content="text/html;charset=utf-8">
+  <title>对话系统</title>
+    <style>@import "css/nav.css";</style>
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+  <script src="js/jquery-1.10.2.min.js"></script>
+
+  <script>
+    $(function () {
+      $('#btn-menu').click(function () {
+        $('.sidebar-nav').toggle();
+      });
+    })
+    $(function(){
+          'use strict';
+           var sidebar = $('#sidebar'); //选择侧栏
+           var mask=$(".mask"); //选择遮罩
+           // var backButton = $('.back-to-top'); //选择返回顶部
+           var sidebar_trigger=$('#sidebar_trigger');//选择侧栏触发器
+
+            function showSidebar(){  //显示侧栏
+              mask.fadeIn();  //显示mask
+              sidebar.animate({'right':0});  //调整侧栏css
+              //sidebar.css('right',0);//两种写法都ok
+              }
+            function hideSideBar(){  //隐藏mask
+                mask.fadeOut();
+                sidebar.css('right',-sidebar.width());
+                console.log("mask");
+              }
+             sidebar_trigger.on('click',showSidebar); //监听侧栏触发器点击
+             mask.click(hideSideBar);   //监听mask
+})
+  </script>
+</head>
+
+<body>
+<nav>
+    <div class="title_block">
+        <img src="images/robot.png">
+        <a class="title" haref="#">
+             智能小七</a>
+    </div>
+        <ul class="link">
+            <li ><a onclick="window.open('https://github.com/kevinng77/')">
+                <img src="https://cdn3.iconfinder.com/data/icons/social-rounded-2/72/GitHub-256.png">
+            </a></li>
+            <li id="sidebar_trigger"><a class="fa fa-bars ">
+                <img src="images/list.png">
+            </a></li>
+        </ul>
+</nav>
+<div class="mask"></div>
+<div id="sidebar">
+	<ul>
+        <li><a id="current_user">使用贴士</a></li>
+
+        <br><br>
+        <li>小七能做什么呢？:<br>
+            - 突然间的尬聊<br>
+            - 热门景点推荐<br>
+            - 酒店信息咨询<br>
+            - 机票酒店预定业务<br>
+        </li>
+        <li><a class="about_me" onclick="window.open('http://wujiawen.xyz')">
+        关于我</a></li>
+	</ul>
+</div>
+
+
+  <div id="wrapper">
+    <div class="phone-wrap">
+      <div id="iphone" class="iphone iphone-preview">
+            <div class="i-body" id='ibody'>
+            </div>
+              <div class="i-bottom">
+                <div class="form-inline">
+                  <input id="mycontent" type="text" class="form-control"
+                         placeholder="用户正在输入中......" />
+                  <a id="clear_content" onclick="clear_content()" class="btn-primary">
+                    <img src="images/clear.png"></a>
+                  <a id="send_content" onclick="submit_content()" class="btn-primary">
+                     <img src="images/send.png"></a>
+
+                </div>
+              </div>
+          </div>
+        </div>
+
+      <script type="text/javascript">
+        function clear_content() {
+          document.getElementById("mycontent").value="";
+          document.getElementById("ibody").innerHTML="";
+          setTimeout(function() {
+            var rec_class = 'i-b-rec-text';
+            var sendmsg = {
+              "content" : "clear"
+            }
+            console.log(JSON.stringify(sendmsg))
+
+            var resp,data1,data2,data3,data4= ""
+            $.ajax({
+              url: "http://localhost:5000/sendmsg",
+              type: "POST",
+              data: sendmsg,
+              dataType: "json",
+              async: false,
+              success: function (result) {
+                console.log(result)
+                resp = result.data.resp
+              }
+            });
+            var dialog = $('<div class="' + rec_class + '"><div>' + '<span><i></i><em>' + resp + '</em></span></div></div>');
+            img = '<img src="images/robot_black.png" />';
+            dialog.prepend(img);
+            $('.i-body').append(dialog);
+            $(".radio-i-b-nick:checked").click();
+          })
+        }
+
+        function submit_content(){
+          var img = '<img src="images/photo.jpg" />';
+          var content = $('#mycontent').val()
+          var msg_class = 'i-b-sen-text';
+          var rec_class = 'i-b-rec-text';
+
+          var dialog = $('<div class="' + msg_class + '"><div><span><i></i><em>' + content + '</em></span></div></div>');
+          dialog.prepend(img);
+          $("#mycontent").val("");
+
+          console.log(dialog)
+          $('.i-body').append(dialog);
+          $(".radio-i-b-nick:checked").click();
+
+          setTimeout(function() {
+            var sendmsg = {
+              "content" : content
+            }
+            console.log(JSON.stringify(sendmsg))
+
+            var resp,data1,data2,data3,data4= ""
+            $.ajax({
+              url: "http://localhost:5000/sendmsg",
+              type: "POST",
+              data: sendmsg,
+              dataType: "json",
+              async: false,
+              success: function (result) {
+                console.log(result)
+                resp = result.data.resp
+                // data1 = result.data.data1
+              }
+            });
+            var dialog = $('<div class="' + rec_class + '"><div>' + '<span><i></i><em>' + resp + '</em></span></div></div>');
+            img = '<img src="images/robot_black.png" />';
+            dialog.prepend(img);
+            $('.i-body').append(dialog);
+            $(".radio-i-b-nick:checked").click();
+            // $("#data1").text(data1)
+
+          })
+        }
+        $("#mycontent").keypress(function(e) {
+          if (e.which == 13) {
+            submit_content();
+          }
+        });
+      </script>
+  </div>
+</body>
+</html>

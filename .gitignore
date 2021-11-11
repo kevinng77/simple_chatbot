@@ -1,0 +1,8 @@
+.idea
+
+/weight
+*.pth
+*.csv
+*.zip
+
+__pycache__
