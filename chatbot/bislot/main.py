@@ -6,8 +6,8 @@ from torch.utils.data import DataLoader
 from transformers import BertTokenizer
 import torch.nn as nn
 import os
-from utils.data_processer import BiDataset
-from utils import metrics
+from bi_utils.data_processer import BiDataset
+from bi_utils import metrics
 import time
 from tqdm import tqdm
 sys.path.append("..")

@@ -1,6 +1,6 @@
 # --- coding:utf-8 ---
 import torch.nn as nn
-from transformers import BertForMaskedLM, BertModel
+from transformers import BertModel
 
 
 class BiModel(nn.Module):

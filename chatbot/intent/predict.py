@@ -1,12 +1,10 @@
 import torch
 from transformers import BertTokenizer
-from utils.data_processer import label_process
 from model.bert_model import IntentModel
 import sys
+
 sys.path.append("..")
 import config
-
-ner_label2id, ner_id2label, bi_label2id, id2bi_label, slots2id, id2slots, slots = label_process(config.slot_file)
 
 
 class IntentPrediction():
@@ -22,14 +20,14 @@ class IntentPrediction():
 
     def intent_predict(self, content):
         contents = []
-        for slot in slots:
+        for slot in config.slots:
             contents.append([content, '有在问' + slot + '吗？'])
 
         inputs = self.tokenizer(contents,
-                                    max_length=128,
-                                    return_tensors='pt',
-                                   padding=True
-                                    ).to(self.device)
+                                max_length=128,
+                                return_tensors='pt',
+                                padding=True
+                                ).to(self.device)
 
         intent_pred = self.intent_model(**inputs)
 
@@ -38,13 +36,12 @@ class IntentPrediction():
         intents = []
         for i, label in enumerate(y_pred):
             if label == 1:
-                intents.append(id2slots[i])
+                intents.append(config.id2slots[i])
 
         return intents
 
 
 if __name__ == '__main__':
-
     args = config.get_args()
     predictor = IntentPrediction(args, intent_weight=config.intent_weight)
     result = predictor.intent_predict("你好")

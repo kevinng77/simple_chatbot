@@ -76,11 +76,11 @@ class BiDataset(Dataset):
 
     def get_input(self, filename):
         df = pd.read_csv(filename, index_col=0)
-        df['query'] = df['query'].apply(lambda x: ''.join(x.split()))
+        # df['query'] = df['query'].apply(lambda x: ''.join(x.split()))
         df['slot'] = df['slot'].apply(lambda x: '对' + x + '有要求吗')
-        df['slot'] = df['slot'].apply(lambda x: ''.join(x.split()))
+        # df['slot'] = df['slot'].apply(lambda x: ''.join(x.split()))
         labels = df['label'].astype('int64').values
-        # print(df.head(5))
+        print(df.head(2))
         # tokenize the sentences
         tokens_seq_1 = list(
             map(self.tokenizer.tokenize, df['query'].values))
@@ -122,6 +122,5 @@ if __name__ == '__main__':
     sys.path.append("../..")
     import config
 
-    slots = label_process(config.slot_file)[-1]
-    generate_data(slots, config.raw_train, config.bi_train)
-    generate_data(slots, config.raw_dev, config.bi_dev)
+    generate_data(config.slots, config.raw_train, config.bi_train)
+    generate_data(config.slots, config.raw_dev, config.bi_dev)

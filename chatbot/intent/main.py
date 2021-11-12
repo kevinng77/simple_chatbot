@@ -6,8 +6,8 @@ from torch.utils.data import DataLoader
 from transformers import BertTokenizer
 import torch.nn as nn
 import os
-from utils.data_processer import IntentDataset
-from utils import metrics
+from intent_utils.data_processer import IntentDataset
+from intent_utils import metrics
 import time
 from tqdm import tqdm
 sys.path.append("..")
@@ -117,7 +117,6 @@ def main():
             best_f1 = dev_f1
             if not os.path.exists('checkout/state_dict'):
                 os.mkdir('checkout/state_dict')
-            path = f'checkout/state_dict/intent_model.pth'
             torch.save(model.state_dict(), config.intent_weight)
 
 

@@ -1,0 +1,1280 @@
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 11:38:02.785225>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 32
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 72
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 11:38:57.035713>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 32
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 72
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 11:42:12.639187>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 32
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 72
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 11:43:53.230834>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 32
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 72
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 11:46:31.251267>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 32
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 72
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 11:47:19.795518>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 32
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 72
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 11:49:03.750265>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 32
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 72
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 11:50:02.208771>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 32
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 72
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 11:58:19.574315>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 32
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 72
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+> Epoch: 1 Step: 100, train loss: 2.7391 F1: 1.32% dev loss: 1.7931 F1: 1.13% 0.15 min
+> Epoch: 2 Step: 200, train loss: 1.0458 F1: 2.24% dev loss: 0.7079 F1: 4.23% 0.14 min
+> Epoch: 4 Step: 300, train loss: 0.5523 F1: 11.12% dev loss: 0.3512 F1: 12.21% 0.14 min
+> Epoch: 5 Step: 400, train loss: 0.3038 F1: 16.92% dev loss: 0.1906 F1: 19.11% 0.14 min
+> Epoch: 7 Step: 500, train loss: 0.1705 F1: 27.78% dev loss: 0.1032 F1: 30.27% 0.14 min
+> Epoch: 8 Step: 600, train loss: 0.1066 F1: 31.55% dev loss: 0.0690 F1: 33.84% 0.14 min
+> Epoch: 10 Step: 700, train loss: 0.0769 F1: 36.73% dev loss: 0.0555 F1: 38.36% 0.14 min
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 12:05:43.604011>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 32
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 5e-05
+>>> num_classes: 72
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 5e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 12:07:36.041183>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 32
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 72
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 12:11:13.343414>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 32
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 71
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 12:13:45.606931>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 32
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 71
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+> Epoch: 1 Step: 100, train loss: 2.8007 F1: 1.66% dev loss: 1.5895 F1: 2.00% 0.15 min
+> Epoch: 2 Step: 200, train loss: 0.9224 F1: 2.90% dev loss: 0.6317 F1: 4.25% 0.14 min
+> Epoch: 4 Step: 300, train loss: 0.5229 F1: 9.34% dev loss: 0.3627 F1: 10.34% 0.14 min
+> Epoch: 5 Step: 400, train loss: 0.3048 F1: 16.90% dev loss: 0.1826 F1: 21.55% 0.14 min
+> Epoch: 7 Step: 500, train loss: 0.1566 F1: 28.24% dev loss: 0.0990 F1: 31.15% 0.14 min
+> Epoch: 8 Step: 600, train loss: 0.0962 F1: 33.10% dev loss: 0.0588 F1: 35.08% 0.14 min
+> Epoch: 10 Step: 700, train loss: 0.0668 F1: 36.82% dev loss: 0.0463 F1: 39.08% 0.14 min
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 12:15:08.913371>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 32
+>>> epoch: 50
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 71
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+> Epoch: 1 Step: 100, train loss: 2.6303 F1: 1.55% dev loss: 1.2465 F1: 1.78% 0.15 min
+> Epoch: 2 Step: 200, train loss: 0.9003 F1: 2.34% dev loss: 0.6643 F1: 4.49% 0.14 min
+> Epoch: 4 Step: 300, train loss: 0.5385 F1: 10.43% dev loss: 0.3448 F1: 12.51% 0.14 min
+> Epoch: 5 Step: 400, train loss: 0.2909 F1: 16.71% dev loss: 0.1811 F1: 20.14% 0.14 min
+> Epoch: 7 Step: 500, train loss: 0.1598 F1: 29.29% dev loss: 0.0923 F1: 31.16% 0.14 min
+> Epoch: 8 Step: 600, train loss: 0.0974 F1: 32.57% dev loss: 0.0600 F1: 34.39% 0.14 min
+> Epoch: 10 Step: 700, train loss: 0.0681 F1: 37.59% dev loss: 0.0461 F1: 39.55% 0.14 min
+> Epoch: 11 Step: 800, train loss: 0.0520 F1: 39.34% dev loss: 0.0358 F1: 41.41% 0.14 min
+> Epoch: 13 Step: 900, train loss: 0.0423 F1: 41.10% dev loss: 0.0305 F1: 41.99% 0.14 min
+> Epoch: 14 Step: 1000, train loss: 0.0358 F1: 41.17% dev loss: 0.0277 F1: 42.41% 0.14 min
+> Epoch: 16 Step: 1100, train loss: 0.0319 F1: 41.79% dev loss: 0.0212 F1: 42.98% 0.14 min
+> Epoch: 17 Step: 1200, train loss: 0.0280 F1: 42.14% dev loss: 0.0202 F1: 43.05% 0.14 min
+> Epoch: 19 Step: 1300, train loss: 0.0253 F1: 42.86% dev loss: 0.0185 F1: 43.50% 0.14 min
+> Epoch: 20 Step: 1400, train loss: 0.0226 F1: 42.84% dev loss: 0.0152 F1: 43.65% 0.14 min
+> Epoch: 22 Step: 1500, train loss: 0.0213 F1: 43.34% dev loss: 0.0137 F1: 43.96% 0.14 min
+> Epoch: 23 Step: 1600, train loss: 0.0194 F1: 43.18% dev loss: 0.0149 F1: 43.94% 0.14 min
+> Epoch: 24 Step: 1700, train loss: 0.0178 F1: 43.30% dev loss: 0.0115 F1: 44.33% 0.14 min
+> Epoch: 26 Step: 1800, train loss: 0.0168 F1: 43.43% dev loss: 0.0121 F1: 44.28% 0.14 min
+> Epoch: 27 Step: 1900, train loss: 0.0156 F1: 43.55% dev loss: 0.0100 F1: 44.48% 0.14 min
+> Epoch: 29 Step: 2000, train loss: 0.0155 F1: 43.52% dev loss: 0.0093 F1: 44.62% 0.14 min
+> Epoch: 30 Step: 2100, train loss: 0.0143 F1: 43.80% dev loss: 0.0092 F1: 44.68% 0.14 min
+> Epoch: 32 Step: 2200, train loss: 0.0136 F1: 44.05% dev loss: 0.0081 F1: 44.85% 0.14 min
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 12:18:42.225882>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 64
+>>> epoch: 50
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 71
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: CE
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 12:19:36.626464>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 64
+>>> epoch: 50
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 71
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: CE
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) equal
+> Epoch: 2 Step: 100, train loss: 3.8522 F1: 1.60% dev loss: 2.4745 F1: 1.89% 0.24 min
+> Epoch: 5 Step: 200, train loss: 1.4975 F1: 3.24% dev loss: 1.0451 F1: 4.60% 0.23 min
+> Epoch: 8 Step: 300, train loss: 0.8602 F1: 10.07% dev loss: 0.6120 F1: 11.38% 0.23 min
+> Epoch: 11 Step: 400, train loss: 0.5173 F1: 18.83% dev loss: 0.3249 F1: 20.79% 0.24 min
+> Epoch: 14 Step: 500, train loss: 0.3014 F1: 29.98% dev loss: 0.1956 F1: 32.79% 0.24 min
+> Epoch: 17 Step: 600, train loss: 0.1974 F1: 33.56% dev loss: 0.1289 F1: 34.76% 0.24 min
+> Epoch: 20 Step: 700, train loss: 0.1406 F1: 38.61% dev loss: 0.0954 F1: 39.86% 0.24 min
+> Epoch: 23 Step: 800, train loss: 0.1084 F1: 41.29% dev loss: 0.0715 F1: 42.47% 0.24 min
+> Epoch: 26 Step: 900, train loss: 0.0896 F1: 42.30% dev loss: 0.0613 F1: 43.47% 0.24 min
+> Epoch: 29 Step: 1000, train loss: 0.0757 F1: 42.98% dev loss: 0.0537 F1: 43.73% 0.24 min
+> Epoch: 32 Step: 1100, train loss: 0.0652 F1: 43.53% dev loss: 0.0415 F1: 44.25% 0.24 min
+> Epoch: 35 Step: 1200, train loss: 0.0582 F1: 43.87% dev loss: 0.0369 F1: 44.55% 0.24 min
+> Epoch: 38 Step: 1300, train loss: 0.0515 F1: 43.73% dev loss: 0.0325 F1: 44.82% 0.24 min
+> Epoch: 41 Step: 1400, train loss: 0.0456 F1: 44.40% dev loss: 0.0314 F1: 44.91% 0.24 min
+> Epoch: 44 Step: 1500, train loss: 0.0420 F1: 45.10% dev loss: 0.0269 F1: 45.14% 0.24 min
+> Epoch: 47 Step: 1600, train loss: 0.0390 F1: 44.90% dev loss: 0.0239 F1: 45.34% 0.24 min
+> Epoch: 49 Step: 1700, train loss: 0.0359 F1: 44.58% dev loss: 0.0213 F1: 45.42% 0.24 min
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 12:26:38.728176>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 64
+>>> epoch: 50
+>>> max_seq_len: 128
+>>> lr: 5e-05
+>>> num_classes: 71
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: CE
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: True
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 5e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) equal
+> Epoch: 2 Step: 100, train loss: 3.0261 F1: 2.07% dev loss: 1.2141 F1: 2.50% 0.25 min
+> Epoch: 5 Step: 200, train loss: 0.7746 F1: 14.35% dev loss: 0.4022 F1: 15.21% 0.24 min
+> Epoch: 8 Step: 300, train loss: 0.3025 F1: 31.79% dev loss: 0.1481 F1: 33.97% 0.24 min
+> Epoch: 11 Step: 400, train loss: 0.1408 F1: 40.38% dev loss: 0.0730 F1: 42.70% 0.24 min
+> Epoch: 14 Step: 500, train loss: 0.0842 F1: 42.99% dev loss: 0.0450 F1: 44.09% 0.24 min
+> Epoch: 17 Step: 600, train loss: 0.0545 F1: 44.08% dev loss: 0.0328 F1: 44.85% 0.24 min
+> Epoch: 20 Step: 700, train loss: 0.0393 F1: 44.72% dev loss: 0.0299 F1: 45.22% 0.24 min
+> Epoch: 23 Step: 800, train loss: 0.0316 F1: 45.10% dev loss: 0.0172 F1: 45.74% 0.24 min
+> Epoch: 26 Step: 900, train loss: 0.0258 F1: 45.09% dev loss: 0.0131 F1: 45.92% 0.24 min
+> Epoch: 29 Step: 1000, train loss: 0.0208 F1: 45.46% dev loss: 0.0091 F1: 46.13% 0.24 min
+> Epoch: 32 Step: 1100, train loss: 0.0179 F1: 45.59% dev loss: 0.0104 F1: 46.07% 0.24 min
+> Epoch: 35 Step: 1200, train loss: 0.0158 F1: 45.86% dev loss: 0.0087 F1: 46.13% 0.24 min
+> Epoch: 38 Step: 1300, train loss: 0.0144 F1: 45.94% dev loss: 0.0083 F1: 46.21% 0.24 min
+> Epoch: 41 Step: 1400, train loss: 0.0125 F1: 46.16% dev loss: 0.0076 F1: 46.24% 0.24 min
+> Epoch: 44 Step: 1500, train loss: 0.0111 F1: 45.90% dev loss: 0.0036 F1: 46.37% 0.24 min
+> Epoch: 47 Step: 1600, train loss: 0.0085 F1: 46.16% dev loss: 0.0026 F1: 46.37% 0.24 min
+> Epoch: 49 Step: 1700, train loss: 0.0074 F1: 46.12% dev loss: 0.0043 F1: 46.36% 0.24 min
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 12:34:47.394919>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 64
+>>> epoch: 50
+>>> max_seq_len: 128
+>>> lr: 5e-05
+>>> num_classes: 71
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0001
+>>> loss: CE
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> state_dict_path: bert_res14_F1_59.03.pth
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: True
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 5e-05, 'weight_decay': 0.0001}
+>>> device: cuda:0
+>>> class weight(or alpha) equal
+> Epoch: 2 Step: 100, train loss: 3.0117 F1: 1.17% dev loss: 1.2616 F1: 2.26% 0.24 min
+> Epoch: 5 Step: 200, train loss: 0.7861 F1: 15.37% dev loss: 0.3853 F1: 18.54% 0.24 min
+> Epoch: 8 Step: 300, train loss: 0.2844 F1: 32.42% dev loss: 0.1539 F1: 34.04% 0.24 min
+> Epoch: 11 Step: 400, train loss: 0.1351 F1: 41.05% dev loss: 0.0772 F1: 42.66% 0.24 min
+> Epoch: 14 Step: 500, train loss: 0.0815 F1: 42.96% dev loss: 0.0495 F1: 43.78% 0.24 min
+> Epoch: 17 Step: 600, train loss: 0.0550 F1: 43.73% dev loss: 0.0326 F1: 44.54% 0.24 min
+> Epoch: 20 Step: 700, train loss: 0.0399 F1: 44.30% dev loss: 0.0250 F1: 45.31% 0.24 min
+> Epoch: 23 Step: 800, train loss: 0.0308 F1: 44.98% dev loss: 0.0133 F1: 45.79% 0.24 min
+> Epoch: 26 Step: 900, train loss: 0.0252 F1: 45.37% dev loss: 0.0120 F1: 45.98% 0.24 min
+> Epoch: 29 Step: 1000, train loss: 0.0213 F1: 45.52% dev loss: 0.0107 F1: 46.05% 0.24 min
+> Epoch: 32 Step: 1100, train loss: 0.0174 F1: 45.61% dev loss: 0.0079 F1: 46.18% 0.24 min
+> Epoch: 35 Step: 1200, train loss: 0.0163 F1: 45.78% dev loss: 0.0078 F1: 46.22% 0.24 min
+> Epoch: 38 Step: 1300, train loss: 0.0143 F1: 45.89% dev loss: 0.0065 F1: 46.26% 0.24 min
+> Epoch: 41 Step: 1400, train loss: 0.0119 F1: 45.92% dev loss: 0.0063 F1: 46.27% 0.24 min
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 12:59:13.939447>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 64
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 71
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0
+>>> loss: focal
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0}
+>>> device: cuda:0
+>>> class weight(or alpha) [0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75]
+> Epoch: 0 Step: 100, train loss: 2.6986 F1: 1.21% dev loss: 1.4862 F1: 1.17% 0.24 min
+> Epoch: 0 Step: 200, train loss: 0.8993 F1: 2.75% dev loss: 0.6141 F1: 4.47% 0.23 min
+> Epoch: 0 Step: 300, train loss: 0.4827 F1: 9.21% dev loss: 0.3211 F1: 11.99% 0.23 min
+> Epoch: 1 Step: 400, train loss: 0.2598 F1: 17.98% dev loss: 0.1643 F1: 20.54% 0.23 min
+> Epoch: 1 Step: 500, train loss: 0.1383 F1: 26.98% dev loss: 0.0921 F1: 32.24% 0.23 min
+> Epoch: 1 Step: 600, train loss: 0.0863 F1: 34.07% dev loss: 0.0654 F1: 36.47% 0.23 min
+> Epoch: 1 Step: 700, train loss: 0.0640 F1: 37.70% dev loss: 0.0526 F1: 40.40% 0.23 min
+> Epoch: 2 Step: 800, train loss: 0.0528 F1: 39.79% dev loss: 0.0466 F1: 40.98% 0.24 min
+> Epoch: 2 Step: 900, train loss: 0.0453 F1: 40.58% dev loss: 0.0410 F1: 41.29% 0.24 min
+> Epoch: 2 Step: 1000, train loss: 0.0396 F1: 41.09% dev loss: 0.0358 F1: 41.68% 0.24 min
+> Epoch: 3 Step: 1100, train loss: 0.0361 F1: 41.39% dev loss: 0.0358 F1: 41.80% 0.24 min
+> Epoch: 3 Step: 1200, train loss: 0.0329 F1: 41.68% dev loss: 0.0327 F1: 42.06% 0.24 min
+> Epoch: 3 Step: 1300, train loss: 0.0324 F1: 41.84% dev loss: 0.0318 F1: 42.24% 0.24 min
+> Epoch: 3 Step: 1400, train loss: 0.0298 F1: 41.98% dev loss: 0.0293 F1: 42.60% 0.24 min
+> Epoch: 4 Step: 1500, train loss: 0.0291 F1: 42.14% dev loss: 0.0279 F1: 42.69% 0.24 min
+> Epoch: 4 Step: 1600, train loss: 0.0255 F1: 42.55% dev loss: 0.0259 F1: 42.89% 0.24 min
+> Epoch: 4 Step: 1700, train loss: 0.0257 F1: 42.38% dev loss: 0.0258 F1: 42.90% 0.24 min
+> Epoch: 5 Step: 1800, train loss: 0.0236 F1: 42.89% dev loss: 0.0243 F1: 43.20% 0.24 min
+> Epoch: 5 Step: 1900, train loss: 0.0235 F1: 42.82% dev loss: 0.0245 F1: 43.18% 0.24 min
+> Epoch: 5 Step: 2000, train loss: 0.0232 F1: 42.80% dev loss: 0.0233 F1: 43.31% 0.24 min
+> Epoch: 5 Step: 2100, train loss: 0.0222 F1: 42.89% dev loss: 0.0233 F1: 43.34% 0.24 min
+> Epoch: 6 Step: 2200, train loss: 0.0220 F1: 43.04% dev loss: 0.0219 F1: 43.49% 0.24 min
+> Epoch: 6 Step: 2300, train loss: 0.0205 F1: 43.11% dev loss: 0.0229 F1: 43.44% 0.24 min
+> Epoch: 6 Step: 2400, train loss: 0.0202 F1: 43.24% dev loss: 0.0220 F1: 43.51% 0.24 min
+> Epoch: 7 Step: 2500, train loss: 0.0200 F1: 43.37% dev loss: 0.0217 F1: 43.53% 0.24 min
+> Epoch: 7 Step: 2600, train loss: 0.0202 F1: 43.20% dev loss: 0.0217 F1: 43.52% 0.24 min
+> Epoch: 7 Step: 2700, train loss: 0.0189 F1: 43.32% dev loss: 0.0219 F1: 43.56% 0.24 min
+> Epoch: 7 Step: 2800, train loss: 0.0186 F1: 43.38% dev loss: 0.0213 F1: 43.61% 0.24 min
+> Epoch: 8 Step: 2900, train loss: 0.0187 F1: 43.57% dev loss: 0.0208 F1: 43.66% 0.24 min
+> Epoch: 8 Step: 3000, train loss: 0.0186 F1: 43.40% dev loss: 0.0213 F1: 43.67% 0.24 min
+> Epoch: 8 Step: 3100, train loss: 0.0187 F1: 43.37% dev loss: 0.0213 F1: 43.67% 0.24 min
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 13:07:46.712125>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 64
+>>> epoch: 50
+>>> max_seq_len: 128
+>>> lr: 5e-05
+>>> num_classes: 71
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0
+>>> loss: CE
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: True
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 5e-05, 'weight_decay': 0.0}
+>>> device: cuda:0
+>>> class weight(or alpha) equal
+> Epoch: 0 Step: 100, train loss: 3.2301 F1: 38.79% dev loss: 1.2164 F1: 71.53% 0.24 min
+> Epoch: 0 Step: 200, train loss: 0.7692 F1: 81.50% dev loss: 0.4252 F1: 87.49% 0.24 min
+> Epoch: 0 Step: 300, train loss: 0.3171 F1: 91.20% dev loss: 0.2010 F1: 94.13% 0.24 min
+> Epoch: 1 Step: 400, train loss: 0.1722 F1: 95.69% dev loss: 0.1371 F1: 95.63% 0.24 min
+> Epoch: 1 Step: 500, train loss: 0.1207 F1: 96.47% dev loss: 0.1056 F1: 96.71% 0.24 min
+> Epoch: 1 Step: 600, train loss: 0.0945 F1: 97.13% dev loss: 0.0818 F1: 97.40% 0.24 min
+> Epoch: 1 Step: 700, train loss: 0.0807 F1: 97.51% dev loss: 0.0761 F1: 97.47% 0.24 min
+> Epoch: 2 Step: 800, train loss: 0.0651 F1: 97.94% dev loss: 0.0674 F1: 97.73% 0.24 min
+> Epoch: 2 Step: 900, train loss: 0.0587 F1: 98.15% dev loss: 0.0621 F1: 97.92% 0.24 min
+> Epoch: 2 Step: 1000, train loss: 0.0585 F1: 98.11% dev loss: 0.0522 F1: 98.27% 0.24 min
+> Epoch: 3 Step: 1100, train loss: 0.0520 F1: 98.35% dev loss: 0.0529 F1: 98.21% 0.24 min
+> Epoch: 3 Step: 1200, train loss: 0.0458 F1: 98.49% dev loss: 0.0518 F1: 98.16% 0.24 min
+> Epoch: 3 Step: 1300, train loss: 0.0435 F1: 98.55% dev loss: 0.0465 F1: 98.40% 0.24 min
+> Epoch: 3 Step: 1400, train loss: 0.0398 F1: 98.65% dev loss: 0.0460 F1: 98.40% 0.24 min
+> Epoch: 4 Step: 1500, train loss: 0.0382 F1: 98.77% dev loss: 0.0498 F1: 98.32% 0.24 min
+> Epoch: 4 Step: 1600, train loss: 0.0352 F1: 98.76% dev loss: 0.0443 F1: 98.48% 0.24 min
+> Epoch: 4 Step: 1700, train loss: 0.0359 F1: 98.78% dev loss: 0.0437 F1: 98.50% 0.24 min
+> Epoch: 5 Step: 1800, train loss: 0.0312 F1: 99.04% dev loss: 0.0385 F1: 98.72% 0.24 min
+> Epoch: 5 Step: 1900, train loss: 0.0309 F1: 98.97% dev loss: 0.0439 F1: 98.46% 0.24 min
+> Epoch: 5 Step: 2000, train loss: 0.0289 F1: 99.02% dev loss: 0.0380 F1: 98.77% 0.24 min
+> Epoch: 5 Step: 2100, train loss: 0.0280 F1: 99.08% dev loss: 0.0361 F1: 98.82% 0.24 min
+> Epoch: 6 Step: 2200, train loss: 0.0266 F1: 99.18% dev loss: 0.0332 F1: 98.99% 0.24 min
+> Epoch: 6 Step: 2300, train loss: 0.0245 F1: 99.21% dev loss: 0.0333 F1: 98.98% 0.24 min
+> Epoch: 6 Step: 2400, train loss: 0.0221 F1: 99.31% dev loss: 0.0355 F1: 98.95% 0.24 min
+> Epoch: 7 Step: 2500, train loss: 0.0226 F1: 99.31% dev loss: 0.0332 F1: 99.02% 0.24 min
+> Epoch: 7 Step: 2600, train loss: 0.0199 F1: 99.36% dev loss: 0.0341 F1: 98.96% 0.24 min
+> Epoch: 7 Step: 2700, train loss: 0.0206 F1: 99.36% dev loss: 0.0338 F1: 98.97% 0.24 min
+> Epoch: 7 Step: 2800, train loss: 0.0200 F1: 99.37% dev loss: 0.0317 F1: 99.06% 0.24 min
+> Epoch: 8 Step: 2900, train loss: 0.0184 F1: 99.42% dev loss: 0.0347 F1: 98.97% 0.24 min
+> Epoch: 8 Step: 3000, train loss: 0.0183 F1: 99.43% dev loss: 0.0351 F1: 98.98% 0.24 min
+> Epoch: 8 Step: 3100, train loss: 0.0189 F1: 99.40% dev loss: 0.0350 F1: 98.98% 0.24 min
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 13:34:57.491139>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 64
+>>> epoch: 50
+>>> max_seq_len: 128
+>>> lr: 5e-05
+>>> num_classes: 71
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: crf
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0
+>>> loss: CE
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 5e-05, 'weight_decay': 0.0}
+>>> device: cuda:0
+>>> class weight(or alpha) equal
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 13:40:37.070459>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 64
+>>> epoch: 50
+>>> max_seq_len: 128
+>>> lr: 5e-05
+>>> num_classes: 71
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: crf
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0
+>>> loss: CE
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 5e-05, 'weight_decay': 0.0}
+>>> device: cuda:0
+>>> class weight(or alpha) equal
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 13:42:12.883080>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 64
+>>> epoch: 50
+>>> max_seq_len: 128
+>>> lr: 5e-05
+>>> num_classes: 71
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: crf
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0
+>>> loss: CE
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 5e-05, 'weight_decay': 0.0}
+>>> device: cuda:0
+>>> class weight(or alpha) equal
+> Epoch: 0 Step: 100, train loss: 113.6675 F1: 41.67% dev loss: 53.2175 F1: 71.20% 0.52 min
+> Epoch: 0 Step: 200, train loss: 36.6028 F1: 77.61% dev loss: 23.4933 F1: 84.84% 0.52 min
+> Epoch: 0 Step: 300, train loss: 17.7166 F1: 87.99% dev loss: 10.9245 F1: 91.18% 0.52 min
+> Epoch: 1 Step: 400, train loss: 8.9521 F1: 94.91% dev loss: 6.5487 F1: 94.74% 0.53 min
+> Epoch: 1 Step: 500, train loss: 5.6472 F1: 95.77% dev loss: 4.4102 F1: 96.43% 0.52 min
+> Epoch: 1 Step: 600, train loss: 4.1453 F1: 96.78% dev loss: 3.6566 F1: 97.01% 0.52 min
+> Epoch: 1 Step: 700, train loss: 3.4675 F1: 97.19% dev loss: 2.9864 F1: 97.54% 0.53 min
+> Epoch: 2 Step: 800, train loss: 2.8502 F1: 97.63% dev loss: 2.6569 F1: 97.70% 0.53 min
+> Epoch: 2 Step: 900, train loss: 2.6292 F1: 97.79% dev loss: 2.6664 F1: 97.69% 0.53 min
+> Epoch: 2 Step: 1000, train loss: 2.3103 F1: 98.02% dev loss: 2.3511 F1: 97.92% 0.54 min
+> Epoch: 3 Step: 1100, train loss: 2.1356 F1: 98.29% dev loss: 2.4476 F1: 97.74% 0.52 min
+> Epoch: 3 Step: 1200, train loss: 1.8893 F1: 98.35% dev loss: 2.0557 F1: 98.20% 0.52 min
+> Epoch: 3 Step: 1300, train loss: 1.7254 F1: 98.51% dev loss: 2.0131 F1: 98.22% 0.53 min
+> Epoch: 3 Step: 1400, train loss: 1.7712 F1: 98.46% dev loss: 1.9512 F1: 98.26% 0.54 min
+> Epoch: 4 Step: 1500, train loss: 1.4258 F1: 98.81% dev loss: 1.9694 F1: 98.18% 0.53 min
+> Epoch: 4 Step: 1600, train loss: 1.5113 F1: 98.67% dev loss: 1.8457 F1: 98.35% 0.53 min
+> Epoch: 4 Step: 1700, train loss: 1.4411 F1: 98.73% dev loss: 1.8325 F1: 98.37% 0.53 min
+> Epoch: 5 Step: 1800, train loss: 1.3869 F1: 98.96% dev loss: 1.7707 F1: 98.41% 0.52 min
+> Epoch: 5 Step: 1900, train loss: 1.2303 F1: 98.91% dev loss: 1.6652 F1: 98.51% 0.52 min
+> Epoch: 5 Step: 2000, train loss: 1.2593 F1: 98.88% dev loss: 1.7755 F1: 98.44% 0.52 min
+> Epoch: 5 Step: 2100, train loss: 1.2074 F1: 98.92% dev loss: 1.7685 F1: 98.44% 0.53 min
+> Epoch: 6 Step: 2200, train loss: 1.0769 F1: 99.10% dev loss: 1.6004 F1: 98.59% 0.53 min
+> Epoch: 6 Step: 2300, train loss: 1.1039 F1: 99.05% dev loss: 1.5070 F1: 98.75% 0.53 min
+> Epoch: 6 Step: 2400, train loss: 0.9881 F1: 99.14% dev loss: 1.5603 F1: 98.65% 0.54 min
+> Epoch: 7 Step: 2500, train loss: 0.9531 F1: 99.14% dev loss: 1.4835 F1: 98.78% 0.54 min
+> Epoch: 7 Step: 2600, train loss: 0.9288 F1: 99.18% dev loss: 1.3725 F1: 98.93% 0.53 min
+> Epoch: 7 Step: 2700, train loss: 0.9035 F1: 99.20% dev loss: 1.5328 F1: 98.73% 0.52 min
+> Epoch: 7 Step: 2800, train loss: 0.8622 F1: 99.27% dev loss: 1.4132 F1: 98.88% 0.53 min
+> Epoch: 8 Step: 2900, train loss: 0.7977 F1: 99.30% dev loss: 1.3891 F1: 98.89% 0.53 min
+> Epoch: 8 Step: 3000, train loss: 0.8226 F1: 99.30% dev loss: 1.4382 F1: 98.86% 0.53 min
+> Epoch: 8 Step: 3100, train loss: 0.8339 F1: 99.27% dev loss: 1.4062 F1: 98.88% 0.53 min
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 14:20:35.395780>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 64
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 2e-05
+>>> num_classes: 71
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0
+>>> loss: CE
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: False
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 2e-05, 'weight_decay': 0.0}
+>>> device: cuda:0
+>>> class weight(or alpha) equal
+> Epoch: 0 Step: 100, train loss: 3.8372 F1: 28.38% dev loss: 2.3138 F1: 73.45% 0.23 min
+> Epoch: 0 Step: 200, train loss: 1.3945 F1: 73.84% dev loss: 0.9505 F1: 78.27% 0.23 min
+> Epoch: 0 Step: 300, train loss: 0.7754 F1: 81.87% dev loss: 0.5708 F1: 86.84% 0.23 min
+> Epoch: 1 Step: 400, train loss: 0.4903 F1: 89.29% dev loss: 0.3578 F1: 89.73% 0.23 min
+> Epoch: 1 Step: 500, train loss: 0.3099 F1: 91.96% dev loss: 0.2255 F1: 93.79% 0.23 min
+> Epoch: 1 Step: 600, train loss: 0.2132 F1: 94.61% dev loss: 0.1705 F1: 95.24% 0.23 min
+> Epoch: 1 Step: 700, train loss: 0.1645 F1: 95.87% dev loss: 0.1389 F1: 95.90% 0.23 min
+> Epoch: 2 Step: 800, train loss: 0.1331 F1: 96.70% dev loss: 0.1167 F1: 96.70% 0.23 min
+> Epoch: 2 Step: 900, train loss: 0.1157 F1: 97.05% dev loss: 0.1084 F1: 96.95% 0.23 min
+> Epoch: 2 Step: 1000, train loss: 0.1013 F1: 97.41% dev loss: 0.1043 F1: 97.11% 0.23 min
+> Epoch: 3 Step: 1100, train loss: 0.0931 F1: 97.68% dev loss: 0.0903 F1: 97.45% 0.23 min
+> Epoch: 3 Step: 1200, train loss: 0.0834 F1: 97.83% dev loss: 0.0824 F1: 97.75% 0.23 min
+> Epoch: 3 Step: 1300, train loss: 0.0843 F1: 97.79% dev loss: 0.0808 F1: 97.81% 0.23 min
+> Epoch: 3 Step: 1400, train loss: 0.0763 F1: 97.93% dev loss: 0.0784 F1: 97.85% 0.23 min
+> Epoch: 4 Step: 1500, train loss: 0.0705 F1: 98.05% dev loss: 0.0755 F1: 97.93% 0.23 min
+> Epoch: 4 Step: 1600, train loss: 0.0675 F1: 98.16% dev loss: 0.0763 F1: 97.96% 0.23 min
+> Epoch: 4 Step: 1700, train loss: 0.0651 F1: 98.25% dev loss: 0.0748 F1: 98.00% 0.23 min
+> Epoch: 5 Step: 1800, train loss: 0.0649 F1: 98.66% dev loss: 0.0736 F1: 97.99% 0.23 min
+> Epoch: 5 Step: 1900, train loss: 0.0634 F1: 98.23% dev loss: 0.0712 F1: 98.06% 0.23 min
+> Epoch: 5 Step: 2000, train loss: 0.0605 F1: 98.30% dev loss: 0.0670 F1: 98.20% 0.23 min
+> Epoch: 5 Step: 2100, train loss: 0.0543 F1: 98.45% dev loss: 0.0695 F1: 98.12% 0.23 min
+> Epoch: 6 Step: 2200, train loss: 0.0575 F1: 98.45% dev loss: 0.0683 F1: 98.18% 0.23 min
+> Epoch: 6 Step: 2300, train loss: 0.0520 F1: 98.52% dev loss: 0.0696 F1: 98.11% 0.23 min
+> Epoch: 6 Step: 2400, train loss: 0.0552 F1: 98.40% dev loss: 0.0686 F1: 98.15% 0.23 min
+> Epoch: 6 Step: 2500, train loss: 0.0533 F1: 98.46% dev loss: 0.0662 F1: 98.20% 0.23 min
+> Epoch: 7 Step: 2600, train loss: 0.0503 F1: 98.56% dev loss: 0.0666 F1: 98.20% 0.23 min
+> Epoch: 7 Step: 2700, train loss: 0.0519 F1: 98.49% dev loss: 0.0647 F1: 98.24% 0.23 min
+> Epoch: 7 Step: 2800, train loss: 0.0507 F1: 98.55% dev loss: 0.0660 F1: 98.22% 0.23 min
+> Epoch: 8 Step: 2900, train loss: 0.0521 F1: 98.57% dev loss: 0.0650 F1: 98.24% 0.23 min
+
+>>>>>>>>>>>>>>>>>>>>>2021-11-12 14:29:49.415313>>>>>>>>>>>>>>>>>>>>>>>>
+>>> pretrained_model_name: hfl/rbt3
+>>> train_file: ../data/intent_train.json
+>>> test_file: ../data/intent_test.json
+>>> batch_size: 64
+>>> epoch: 10
+>>> max_seq_len: 128
+>>> lr: 5e-05
+>>> num_classes: 71
+>>> dropout: 0.1
+>>> step: 100
+>>> downstream: linear
+>>> num_heads: 12
+>>> num_layers: 1
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> weight_decay: 0.0
+>>> loss: CE
+>>> gamma: 2.0
+>>> alpha: 0.75
+>>> shuffle: False
+>>> load_model: False
+>>> seed: 7
+>>> metrics: f1
+>>> verbose: False
+>>> warmup_steps: 500
+>>> max_steps: 3000
+>>> max_grad_norm: 2.0
+>>> clip_large_grad: True
+>>> adam_beta1: 0.9
+>>> adam_beta2: 0.999
+>>> adam_epsilon: 1e-08
+>>> adam_amsgrad: False
+>>> augument: False
+>>> contrastive: False
+>>> rdrop: False
+>>> rdrop_alpha: 0.01
+>>> temp: 0.05
+>>> optimizer_kwargs: {'betas': (0.9, 0.999), 'eps': 1e-08, 'lr': 5e-05, 'weight_decay': 0.0}
+>>> device: cuda:0
+>>> class weight(or alpha) equal
+> Epoch: 0 Step: 100, train loss: 2.9099 F1: 49.47% dev loss: 1.1228 F1: 74.63% 0.24 min
+> Epoch: 0 Step: 200, train loss: 0.7190 F1: 82.58% dev loss: 0.4215 F1: 88.73% 0.23 min
+> Epoch: 0 Step: 300, train loss: 0.3074 F1: 92.01% dev loss: 0.1940 F1: 94.93% 0.23 min
+> Epoch: 1 Step: 400, train loss: 0.1558 F1: 96.80% dev loss: 0.1171 F1: 96.81% 0.23 min
+> Epoch: 1 Step: 500, train loss: 0.1073 F1: 97.17% dev loss: 0.0924 F1: 97.34% 0.23 min
+> Epoch: 1 Step: 600, train loss: 0.0834 F1: 97.64% dev loss: 0.0801 F1: 97.72% 0.23 min
+> Epoch: 1 Step: 700, train loss: 0.0710 F1: 97.98% dev loss: 0.0694 F1: 98.09% 0.23 min
+> Epoch: 2 Step: 800, train loss: 0.0620 F1: 98.26% dev loss: 0.0671 F1: 98.12% 0.23 min
+> Epoch: 2 Step: 900, train loss: 0.0547 F1: 98.39% dev loss: 0.0602 F1: 98.29% 0.23 min
+> Epoch: 2 Step: 1000, train loss: 0.0514 F1: 98.46% dev loss: 0.0651 F1: 98.20% 0.23 min
+> Epoch: 3 Step: 1100, train loss: 0.0473 F1: 98.72% dev loss: 0.0549 F1: 98.39% 0.23 min
+> Epoch: 3 Step: 1200, train loss: 0.0417 F1: 98.73% dev loss: 0.0536 F1: 98.44% 0.23 min
+> Epoch: 3 Step: 1300, train loss: 0.0397 F1: 98.80% dev loss: 0.0511 F1: 98.59% 0.23 min
+> Epoch: 3 Step: 1400, train loss: 0.0395 F1: 98.82% dev loss: 0.0504 F1: 98.61% 0.23 min
+> Epoch: 4 Step: 1500, train loss: 0.0378 F1: 98.94% dev loss: 0.0480 F1: 98.68% 0.23 min
+> Epoch: 4 Step: 1600, train loss: 0.0341 F1: 98.99% dev loss: 0.0485 F1: 98.67% 0.23 min
+> Epoch: 4 Step: 1700, train loss: 0.0333 F1: 98.97% dev loss: 0.0499 F1: 98.67% 0.23 min
+> Epoch: 5 Step: 1800, train loss: 0.0340 F1: 98.83% dev loss: 0.0452 F1: 98.72% 0.24 min
+> Epoch: 5 Step: 1900, train loss: 0.0293 F1: 99.10% dev loss: 0.0457 F1: 98.84% 0.23 min
+> Epoch: 5 Step: 2000, train loss: 0.0294 F1: 99.08% dev loss: 0.0424 F1: 98.86% 0.23 min
+> Epoch: 5 Step: 2100, train loss: 0.0282 F1: 99.10% dev loss: 0.0463 F1: 98.76% 0.23 min
+> Epoch: 6 Step: 2200, train loss: 0.0298 F1: 99.09% dev loss: 0.0437 F1: 98.82% 0.24 min
+> Epoch: 6 Step: 2300, train loss: 0.0252 F1: 99.21% dev loss: 0.0437 F1: 98.83% 0.24 min
+> Epoch: 6 Step: 2400, train loss: 0.0245 F1: 99.25% dev loss: 0.0449 F1: 98.76% 0.23 min
+> Epoch: 6 Step: 2500, train loss: 0.0256 F1: 99.20% dev loss: 0.0433 F1: 98.86% 0.23 min
+> Epoch: 7 Step: 2600, train loss: 0.0232 F1: 99.24% dev loss: 0.0426 F1: 98.93% 0.24 min
+> Epoch: 7 Step: 2700, train loss: 0.0232 F1: 99.26% dev loss: 0.0430 F1: 98.91% 0.24 min
+> Epoch: 7 Step: 2800, train loss: 0.0236 F1: 99.27% dev loss: 0.0422 F1: 98.89% 0.24 min
+> Epoch: 8 Step: 2900, train loss: 0.0211 F1: 99.41% dev loss: 0.0418 F1: 98.91% 0.24 min
+> Epoch: 8 Step: 3000, train loss: 0.0209 F1: 99.31% dev loss: 0.0418 F1: 98.91% 0.24 min
+> Epoch: 8 Step: 3100, train loss: 0.0219 F1: 99.31% dev loss: 0.0428 F1: 98.90% 0.24 min
+> Epoch: 8 Step: 3200, train loss: 0.0229 F1: 99.29% dev loss: 0.0432 F1: 98.88% 0.24 min

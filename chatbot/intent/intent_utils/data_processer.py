@@ -5,32 +5,6 @@ import random
 import torch
 
 
-def label_process(filename):
-    with open(filename) as f:
-        slots = f.read().split('\n')
-
-    ner_label2id, ner_id2label = {'O': 0}, {0: 'O'}
-    bi_label = []
-    ner_n = 0
-    for label in slots:
-        if label.split('-')[1] != '酒店设施':
-            ner_label2id['B_' + label] = 2 * ner_n + 1
-            ner_label2id['I_' + label] = 2 * ner_n + 2
-            ner_id2label[2 * ner_n + 1] = 'B_' + label
-            ner_id2label[2 * ner_n + 2] = 'I_' + label
-            ner_n += 1
-        else:
-            bi_label.append(label)
-
-    slots += ['greet-none', 'thank-none', 'bye-none']
-    slots2id = {slot: i for i, slot in enumerate(slots)}
-    id2slots = {i: slot for i, slot in enumerate(slots)}
-
-    bi_label2id = {b_l: i for i, b_l in enumerate(bi_label)}
-    id2bi_label = {i: b_l for i, b_l in enumerate(bi_label)}
-    return ner_label2id, ner_id2label, bi_label2id, id2bi_label, slots2id, id2slots, slots
-
-
 def generate_data(slots, file_path, save_path):
     with open(file_path) as f:
         data = json.load(f)
@@ -46,9 +20,9 @@ def generate_data(slots, file_path, save_path):
                     for label in labels:
                         query_list.append([query, label, 1])
                         m += 1
-                    if m < 5:
+                    if m < 15:
                         tmp = [x for x in slots if x not in labels]
-                        neg_samples = random.sample(tmp, 5-m)
+                        neg_samples = random.sample(tmp, 15-m)
                         for neg_label in neg_samples:
                             query_list.append([query, neg_label, 0])
 
@@ -72,11 +46,11 @@ class IntentDataset(Dataset):
 
     def get_input(self, filename):
         df = pd.read_csv(filename, index_col=0)
-        df['query'] = df['query'].apply(lambda x: ''.join(x.split()))
+        # df['query'] = df['query'].apply(lambda x: ''.join(x.split()))
         df['slot'] = df['slot'].apply(lambda x: '有在问' + x + '吗')
-        df['slot'] = df['slot'].apply(lambda x: ''.join(x.split()))
+        # df['slot'] = df['slot'].apply(lambda x: ''.join(x.split()))
         labels = df['label'].astype('int64').values
-        # print(df.head(5))
+        print(df.head(2))
         # tokenize the sentences
         tokens_seq_1 = list(
             map(self.tokenizer.tokenize, df['query'].values))
@@ -118,7 +92,6 @@ if __name__ == '__main__':
     sys.path.append("../..")
     import config
 
-    slots = label_process(config.slot_file)[-1]
+    slots = config.slots
     generate_data(slots, config.raw_train, config.intent_train)
     generate_data(slots, config.raw_dev, config.intent_dev)
-    # generate_data(slots, 'test.json', 'test_intent.csv')

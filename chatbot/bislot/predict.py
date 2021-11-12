@@ -1,13 +1,9 @@
 import torch
 from transformers import BertTokenizer
-from utils.data_processer import label_process
 from bimodel.bert_model import BiModel
 import sys
-
 sys.path.append("..")
 import config
-
-_, _, bi_label2id, id2bi_label, _, _, slots = label_process(config.slot_file)
 
 
 class BiPrediction():
@@ -23,7 +19,7 @@ class BiPrediction():
 
     def bi_predict(self, content):
         contents = []
-        for slot in bi_label2id:
+        for slot in config.bi_label2id:
             contents.append([content, '对' + slot + '有要求吗'])
 
         inputs = self.tokenizer(contents,
@@ -39,7 +35,7 @@ class BiPrediction():
         bis = []
         for i, label in enumerate(y_pred):
             if label == 1:
-                bis.append(id2bi_label[i])
+                bis.append(config.id2bi_label[i])
 
         return bis
 
