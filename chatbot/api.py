@@ -10,6 +10,8 @@ from flask import Flask
 from flask.globals import request
 from flask.json import jsonify
 from flask_cors import CORS
+from open_chat.open_chat_util import OpenChat
+
 import config
 import sys
 sys.path.append("intent")
@@ -58,6 +60,8 @@ ner_pre = NerPredicter(model_path=config.ner_weight,
                        ner_id2label=config.ner_id2label,
                        args=args,
                        ner_label2id=config.ner_label2id)
+print("loading open-field chat")
+open_chat = OpenChat()
 
 database = DataBase()
 DST = defaultdict(set)
@@ -82,9 +86,8 @@ def FitAndPredict(content):
                 if len_reply > 0:
                     return '', '', '', '', reply
             else:
-                pass
-                # answer = open_chat.predict(content)
-                # return '', '', '', '', answer
+                answer = open_chat.predict(content)
+                return '', '', '', '', answer
 
         if len(bi_entities) != 0:
             DST['酒店-酒店设施'] = [bi_entity.split('-')[-1] for bi_entity in bi_entities]
