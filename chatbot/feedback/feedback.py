@@ -21,6 +21,8 @@ def intent_feedback(ner_result):
         elif intent == "餐馆-名称":
             reply_list.append(f"{value}有什么推荐菜？")
             reply_list.append(f"{value}在哪里？")
+            reply_list.append(f"{value}评分怎么样？")
+
 
         elif intent == "餐馆-推荐菜":
             reply_list.append(f"帮我找一家有{value}的餐馆。")
@@ -30,11 +32,10 @@ def intent_feedback(ner_result):
 
         elif intent == "景点-门票":
             reply_list.append(f"帮我找个免费的景点。")
+            reply_list.append(f"帮我找个我买不起门票的景点。")
 
         elif intent == "景点-评分":
             reply_list.append(f"帮我找个评分为{value}的景点。")
-
-
 
     reply = "抱歉，小七没听懂。您是不是想问："
 

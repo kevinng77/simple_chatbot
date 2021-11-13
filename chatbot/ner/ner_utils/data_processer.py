@@ -128,7 +128,7 @@ def generate_ner_data(file_path, save_path):
                     ner_n = 0
                     tmp = ['O'] * len(query)
                     for j, each in enumerate(turn['dialog_act']):
-                        if each[0] != "Select" and each[3] and '酒店设施' not in each[2]:
+                        if each[0] == "Inform" and each[3] and '酒店设施' not in each[2]:
                             entity = each[3]
                             idx = find_index(query, entity)
                             if idx > -1:

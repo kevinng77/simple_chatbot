@@ -16,7 +16,10 @@ def generate_data(slots, file_path, save_path):
                     labels = set()
                     m = 0
                     for k, act in enumerate(turn['dialog_act']):
-                        labels.add(act[1]+'-'+act[2])
+                        if act[0] in ["General","Request"]:
+                            labels.add(act[1]+'-'+act[2])
+                        elif act[0] == "Select":
+                            labels.add(act[1]+"-名称")
                     for label in labels:
                         query_list.append([query, label, 1])
                         m += 1
@@ -25,6 +28,11 @@ def generate_data(slots, file_path, save_path):
                         neg_samples = random.sample(tmp, 15-m)
                         for neg_label in neg_samples:
                             query_list.append([query, neg_label, 0])
+                    # if m < 15:
+                    # tmp = [x for x in slots if x not in labels]
+                    # # neg_samples = random.sample(tmp, 15-m)
+                    # for neg_label in tmp:
+                    #     query_list.append([query, neg_label, 0])
 
         dataset = pd.DataFrame(query_list, columns=['query', 'slot', 'label'])
         dataset.to_csv(save_path)

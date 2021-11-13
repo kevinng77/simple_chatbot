@@ -101,7 +101,7 @@ class DataBase:
             else:
                 name_n = len(DST['景点-名称'])
                 if name_n == 0:
-                    return '我不太清楚目前想找的景点名，您能和我再说一下想要去哪里吗？'
+                    return ''
                 elif name_n == 1:
                     name = DST['景点-名称'][0]
                     try:
@@ -110,6 +110,9 @@ class DataBase:
                     except KeyError:
                         return '不好意思，我们并没有' + name + '的相关记录'
                     else:
+                        print(DST[intent])
+                        print(self.database[query_domain][name][query_slot])
+                        print()
                         DST[intent] = self.database[query_domain][name][query_slot]
                         if isinstance(DST[intent], str):
                             return query_slot + '：' + DST[intent]
@@ -201,7 +204,7 @@ class DataBase:
             else:
                 name_n = len(DST['酒店-名称'])
                 if name_n == 0:
-                    return '我不太清楚目前想找的酒店名，您能和我再说一下您想去哪家酒店住宿吗？'
+                    return ''
                 elif name_n == 1:
                     name = DST['酒店-名称'][0]
                     try:
