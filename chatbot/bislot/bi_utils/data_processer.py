@@ -54,9 +54,7 @@ def generate_data(slots, file_path, save_path):
 
         dataset = pd.DataFrame(query_list, columns=['query', 'slot', 'label'])
         dataset = dataset[dataset.slot.apply(lambda x:"酒店设施" in x)]
-        num_sample_pos = len(dataset[dataset.label == 1])
         print("pos sample: ",len(dataset[dataset.label == 1]))
-        # neg = dataset[dataset.label == 0][0:num_sample_pos]
         dataset.to_csv(save_path)
 
 
@@ -76,12 +74,9 @@ class BiDataset(Dataset):
 
     def get_input(self, filename):
         df = pd.read_csv(filename, index_col=0)
-        # df['query'] = df['query'].apply(lambda x: ''.join(x.split()))
         df['slot'] = df['slot'].apply(lambda x: '对' + x + '有要求吗')
-        # df['slot'] = df['slot'].apply(lambda x: ''.join(x.split()))
         labels = df['label'].astype('int64').values
         print(df.head(2))
-        # tokenize the sentences
         tokens_seq_1 = list(
             map(self.tokenizer.tokenize, df['query'].values))
         tokens_seq_2 = list(
@@ -96,20 +91,13 @@ class BiDataset(Dataset):
             torch.long), torch.Tensor(labels).type(torch.long)
 
     def create_seq(self, tokens_seq_1, tokens_seq_2):
-        # add special tokens
         seq = ['[CLS]'] + tokens_seq_1 + ['[SEP]'] + tokens_seq_2 + ['[SEP]']
-        # generate segment embedding
         seq_segment = [0] * (len(tokens_seq_1) +
                              2) + [1] * (len(tokens_seq_2) + 1)
-        # convert token to id
         seq = self.tokenizer.convert_tokens_to_ids(seq)
-        # generate padding list based on max_seq_len
         padding = [0] * (self.max_seq_len - len(seq))
-        # create seq_mask
         seq_mask = [1] * len(seq) + padding
-        # add padding on seq_segment
         seq_segment = seq_segment + padding
-        # add padding on seq
         seq = seq + padding
         assert len(seq) == self.max_seq_len
         assert len(seq_mask) == self.max_seq_len

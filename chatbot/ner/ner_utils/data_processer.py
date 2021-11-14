@@ -5,8 +5,6 @@ from transformers import BertTokenizer
 import re
 
 
-
-
 class Tokenizer:
     def __init__(self, args, ner_label2id, ner_id2label):
         self.bert_tokenizer = BertTokenizer.from_pretrained(args.pretrained_model_name)
@@ -134,7 +132,7 @@ def generate_ner_data(file_path, save_path):
                             if idx > -1:
                                 ner_n += 1
                                 tmp[idx] = 'B_' + each[1] + '-' + each[2]
-                                tmp[idx + 1:idx + len(entity)] = ['I_' + each[1] + '-' + each[2]] * (len(entity)-1)
+                                tmp[idx + 1:idx + len(entity)] = ['I_' + each[1] + '-' + each[2]] * (len(entity) - 1)
                     if ner_n > 0:
                         tmp = ','.join(tmp)
                         query_list.append([query, tmp])
@@ -154,7 +152,3 @@ if __name__ == '__main__':
     args = config.get_args()
     generate_ner_data(config.raw_train, config.ner_train)
     generate_ner_data(config.raw_dev, config.ner_dev)
-    # tokenizer = Tokenizer(args, ner_label2id=config.ner_label2id, ner_id2label=config.ner_id2label)
-    # dataset = NerDataset(file_path=config.ner_dev,
-    #                      tokenizer=tokenizer)
-    # print(dataset[0])

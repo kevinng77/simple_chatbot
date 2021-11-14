@@ -1,19 +1,13 @@
-'''
-Author: your name
-Date: 2021-07-23 08:45:46
-LastEditTime: 2021-07-23 10:50:28
-LastEditors: Please set LastEditors
-Description: In User Settings Edit
-FilePath: /PyCode/project_demo/remotegit/wx-duihua/bimodel/api.py
-'''
 from flask import Flask
 from flask.globals import request
 from flask.json import jsonify
 from flask_cors import CORS
-from open_chat.open_chat_util import OpenChat
+# from open_chat.open_chat_util import OpenChat
+# 可以添加闲聊模块
 
 import config
 import sys
+
 sys.path.append("intent")
 sys.path.append("bislot")
 sys.path.append("ner")
@@ -30,16 +24,13 @@ from collections import defaultdict
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
 
-@app.route("/test",methods=['GET'])
-def test():
-    return "ok"
 
-@app.route("/sendmsg",methods=['POST'])
+@app.route("/sendmsg", methods=['POST'])
 def sendMsg2Robot():
     req = request.form.get('content')
     data1, data2, data3, data4, resp = FitAndPredict(req)
     return jsonify({
-        "data":{
+        "data": {
             "data1": data1,
             "data2": data2,
             "data3": data3,
@@ -53,31 +44,38 @@ args = config.get_args()
 print("loading intent")
 intent_pre = IntentPrediction(args, intent_weight=config.intent_weight)
 print("loading bi")
-bi_pre = BiPrediction(args, bi_weight=config.bi_weight)
+bi_pre = BiPrediction(args,
+                      bi_weight=config.bi_weight,
+                      id2bi_label=config.id2bi_label,
+                      bi_label2id=config.bi_label2id
+                      )
 print("loading ner")
 
 ner_pre = NerPredicter(model_path=config.ner_weight,
                        ner_id2label=config.ner_id2label,
                        args=args,
                        ner_label2id=config.ner_label2id)
-print("loading open-field chat")
-open_chat = OpenChat()
+# print("loading open-field chat")
+# open_chat = OpenChat()
 
 database = DataBase()
 DST = defaultdict(set)
 mapping = linking_utils.get_link_map("entitylinking/data/place.txt")
 
+
 def FitAndPredict(content):
     global DST
-    print("user query:\t",content)
+    print("===" * 15)
+    print("用户query:\t", content)
     if content == 'clear':
         DST = defaultdict(set)
-        return '', '', '', '', '用户对话状态已重置，可以开启新一轮对话！'
+        return '', '', '', '', '你点了什么?!'
+    elif content == "":
+        return '', '', '', '', '?'
     else:
         intents = intent_pre.intent_predict(content)
         bi_entities = bi_pre.bi_predict(content)
         ner_entities = ner_pre.ner_predict(content)
-        print("ner识别结果:\t",ner_entities)
 
         if len(intents) == 0:
             if len(ner_entities) > 0:
@@ -86,21 +84,30 @@ def FitAndPredict(content):
                 if len_reply > 0:
                     return '', '', '', '', reply
             else:
-                answer = open_chat.predict(content)
-                return '', '', '', '', answer
+                pass
+                # 闲聊添加
+                # answer = open_chat.predict(content)
+                # return '', '', '', '', answer
 
         if len(bi_entities) != 0:
             DST['酒店-酒店设施'] = [bi_entity.split('-')[-1] for bi_entity in bi_entities]
 
+        print("\nNER 结果：")
         for entity in ner_entities:
             domain_slot, value = entity.split('\t')
+            print(f"检测到实体 {value}, 类别 {domain_slot}", end="\t")
             official_name = linking_utils.link_entity(value, mapping)
             if official_name is not None:
+                print(f"实体被链接到 {official_name}")
                 value = official_name
             DST[domain_slot] = [value]
+            print()
 
-        print("DST:\t",DST)
-        print("intent识别结果:\t",intents)
+        print("\nDST（当前状态）:")
+        for item in DST:
+            print(f"{item}:\t{DST[item]}")
+
+        print("\n（意图识别结果）用户询问：\t", " ".join(intents))
 
         answer, DST = rule_response(content, intents, database, DST)
 
@@ -109,7 +116,7 @@ def FitAndPredict(content):
             if isinstance(value, str):
                 str_DST += key + '：' + value + '\n'
             else:
-                str_DST += key+'：'+','.join(value)+'\n'
+                str_DST += key + '：' + ','.join(value) + '\n'
 
         return None, None, None, str_DST, answer
 
