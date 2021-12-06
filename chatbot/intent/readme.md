@@ -4,15 +4,21 @@
 
 ### 生成训练数据集
 
-`cd intent_utils && python data_processer.py`
+执行 `chatbot/intent/intent_utils` 下的 `data_processer.py`
+
+```
+cd intent_utils && python data_processer.py
+```
 
 ### 训练
 
-在 `intent` 文件夹下执行 
+回到 `cahtbot/intent` 文件夹下执行 
 
 ```
-python main.py --epoch=3
+python main.py --epoch=2
 ```
+
+每个epoch耗时约20分钟（在3070笔记本上）
 
 ### 检验结果
 
